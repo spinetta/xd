@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="iconlol.png" type="image/gif"/>
+    <link rel="stylesheet" href="kkona.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>﷽﷽﷽tts﷽﷽﷽</title>
+    <body>
+      <background="">
+        <body background="lolsasxd123/kkonarriba.gif">
+        <div id="">
+            <h1><a class="rainbow rainbow_text_animated" href="index.html">KKona TTS</a><img src="lolsasxd123/kkona.gif" > </h1>
+            </div>
+    <textarea id="text" rows=15 cols=80 maxlength=500>
+    </textarea>
+    <!--PoroSad-->
+      <!--PoroSad-->
+        <!--PoroSad-->
+          <!--PoroSad-->
+            <!--PoroSad-->
+              <!--PoroSad-->
+                <!--PoroSad-->
+                  <!--PoroSad-->
+                    <!--PoroSad-->
+                      <!--PoroSad-->
+                        <!--PoroSad-->
+                          <!--PoroSad-->
+                            <!--PoroSad-->
+                              <!--PoroSad-->
+                                <!--PoroSad-->
+                                  <!--PoroSad-->
+                                    <!--PoroSad-->
+                                      <!--PoroSad-->
+                                        <!--PoroSad-->
+                                          <!--PoroSad-->
+                                            <!--PoroSad-->
+                                              <!--PoroSad-->
+                                                <!--PoroSad-->
+                                            <!--PoroSad-->
+                                        <!--PoroSad-->
+                                  <!--PoroSad-->
+                              <!--PoroSad-->
+                          <!--PoroSad-->
+                      <!--PoroSad-->
+                  <!--PoroSad-->
+              <!--PoroSad-->
+          <!--PoroSad-->
+      <!--PoroSad-->
+    <div>
+        <audio id="audio" controls="">
+            <source id="source" type="audio/wav">
+        </audio>
+    <div>
+        <button type="submit" id="button">LOOOOOOOOOOOOOOOOL</button>
+    </div>
+    <P class="aaaaa">Contador de caracteres:</P><span class="aaaaa" id="charlen">0</span>
+    <script>
+    document.getElementById("text").oninput = function() {
+        document.getElementById("charlen").innerHTML = document.getElementById("text").value.length;
+    };
+    
+    document.getElementById("button").onclick = async function() {
+        let text = document.getElementById("text").value;
+        let speak = await fetch("https://api.streamelements.com/kappa/v2/speech?voice=Brian&text=" + encodeURIComponent(text.trim()));
+    
+        if (speak.status != 200) {
+            alert(await speak.text());
+            return;
+        }
+    
+        let mp3 = await speak.blob();
+    
+        let blobUrl = URL.createObjectURL(mp3);
+        document.getElementById("source").setAttribute("src", blobUrl);
+        let audio = document.getElementById("audio");
+        audio.pause();
+        audio.load();
+        audio.play();
+    };
+    </script>
+
+
+
+
+</body>
+
+
+
+    </html>

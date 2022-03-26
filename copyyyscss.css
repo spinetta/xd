@@ -1,0 +1,75 @@
+
+@font-face {
+  font-family: "Droid Sans Mono";
+  src: url(copys/alagard.woff2) format("woff2");
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  text-align: center;
+  min-height: 80vh;
+  font-size: 35px;
+  background-color: #00000085;
+  font-family: "Droid Sans Mono";
+  background-size: auto;
+  background-blend-mode: overlay;}
+.rainbow {
+  text-decoration: underline;
+  letter-spacing: 5px;
+}
+.rainbow_text_animated {
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #fbff00,
+    #2bff00,
+    #00ffdd,
+    #c300ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 1s ease-in-out infinite;
+  background-size: 300% 100%;
+}
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  } 
+  50% {
+    background-position: 100% 0;
+  }
+}
+.aaaaa { 
+  color: aliceblue;
+  font-size: 16px;
+  background: linear-gradient(
+    to right,
+    #535353,
+    #ffffff,
+    #666666,
+    #000000,
+    #e5b8f3
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 5s ease-in-out infinite;
+  background-size: 300% 100%;
+
+
+}
+@font-face {
+  font-family: "ssssssss";
+  src: url("fonts/Retro\ Gaming.woff2");
+}
+.lolxd { 
+  color: aliceblue;
+  font-size: 25px;
+  font-family: ssssssss;
+  letter-spacing: 5px;
+}
